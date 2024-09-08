@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  overflow: hidden;
+  background-image: url(https://img.freepik.com/free-vector/gradient-wavy-background-with-spheres_23-2149111796.jpg);
+  font-family: 'Rubik', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: backgroundAnimation 6s infinite alternate 0.1s linear;
+}
+
+@keyframes backgroundAnimation {
+    15% {
+        background-position: 15%;
+    }
+    50% {
+        background-position: 50%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+.login{
+  width: 30%;
+  padding: 50px 30px 44px;
+  border-radius: 1.25rem;
+  text-align: center;
+  background-color:  #f0f0f0;
+}
+h1{
+  font-weight: 600;
+  font-size: 36px;
+  padding-bottom: 12px;
+  color:black;
+}
+
+a{
+  color: #5b1098;
+  font-size: 0.9rem;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 10%;
+}
+input,button{
+  margin: auto;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+input:hover {
+    border: 2px solid #10449A;
+    transition: all 0.375s;
+}
+
+button:hover {
+    background-color: #981086;
+    transition: all 0.375s;
+}
+
+a:hover {
+  color: #981086;
+  transition: all 0.375s;
+}
+input{
+  height: 50px;
+  width: 80%;
+  border:solid 2px #ebebeb;
+  font-size: 15px;
+  padding: 0px 10px 0px 10px;
+  margin-bottom:20px;
+  border-radius: 1.25rem;
+}
+button { 
+  height: 50px;
+  width: 85%;                      
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 20px;
+  border-radius: 1.25rem;
+  border: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2px;
+  background-color: #5b1098;
+  color: #f9f9f9;
+  cursor: pointer;
+}
